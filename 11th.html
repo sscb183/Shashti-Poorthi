@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6b1418">
+  <title>Shashti Poorti of Pidatala Nagamala · 11th day</title>
+  <meta name="description" content="With the blessings of PVS, you are invited to the Shashti Poorti of Pidatala Nagamala. Venue: Home. Contact: 9441210036">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --wine: #6b1418;
+      --wine-deep: #3d0b0e;
+      --gold: #c4a15a;
+      --gold-bright: #e8d39a;
+      --ivory: #f6ecd8;
+      --paper: #fff8ec;
+      --ink: #3a2418;
+      --muted: #6d5344;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { min-height: 100%; }
+    body {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      color: var(--ink);
+      background: var(--ivory);
+      line-height: 1.55;
+    }
+    button { font: inherit; cursor: pointer; border: 0; background: none; }
+
+    /* GATE */
+    .gate {
+      position: fixed; inset: 0; z-index: 40;
+      display: grid; place-items: center;
+      background: #1a0808;
+      transition: opacity .7s ease, visibility .7s ease;
+    }
+    .gate.is-open { opacity: 0; visibility: hidden; pointer-events: none; }
+    .gate-photo {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center top;
+      filter: brightness(.72);
+    }
+    .gate-veil {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(40,8,8,.25) 0%, rgba(20,4,4,.55) 55%, rgba(12,3,3,.82) 100%);
+    }
+    .gate-copy {
+      position: relative; z-index: 2;
+      text-align: center; color: var(--gold-bright);
+      padding: 1.5rem 1.25rem 2.5rem;
+      display: flex; flex-direction: column; align-items: center; gap: .55rem;
+    }
+    .gate-kicker {
+      letter-spacing: .38em; text-transform: uppercase;
+      font-family: Cinzel, serif; font-size: .68rem; opacity: .9;
+    }
+    .gate-title {
+      font-family: Cinzel, serif; font-weight: 700;
+      font-size: clamp(1.7rem, 6vw, 3rem);
+      letter-spacing: .12em; line-height: 1.15;
+      text-shadow: 0 8px 30px rgba(0,0,0,.45);
+    }
+    .gate-of { font-family: "Great Vibes", cursive; font-size: 1.6rem; color: #f3e3b8; }
+    .gate-name {
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(2rem, 7vw, 3.4rem);
+      color: #fff4d4;
+    }
+    .seal {
+      margin-top: 1.1rem;
+      width: 92px; height: 92px; border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #f7e3a8, #d4a84a 46%, #8c6318);
+      box-shadow: 0 10px 28px rgba(0,0,0,.4), inset 0 0 0 4px #f0d58a, inset 0 0 0 7px #b8892a;
+      color: var(--wine); font-family: Cinzel, serif; font-weight: 700;
+      font-size: 1.15rem; letter-spacing: .08em;
+      display: grid; place-items: center;
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+    .seal span { font-size: .62rem; letter-spacing: .22em; display: block; margin-top: .15rem; }
+    .gate-tap {
+      font-family: Cinzel, serif; font-size: .62rem;
+      letter-spacing: .32em; text-transform: uppercase; opacity: .85; margin-top: .35rem;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    /* PAGE */
+    .invite { padding-bottom: 3rem; }
+    .hero-card {
+      margin: 0 auto;
+      max-width: 520px;
+    }
+    .hero-card img {
+      width: 100%; display: block;
+      box-shadow: 0 18px 50px rgba(60,20,10,.25);
+    }
+    section { padding: 2.4rem 1.25rem; }
+    .wrap { max-width: 640px; margin: 0 auto; text-align: center; }
+    .eyebrow {
+      font-family: Cinzel, serif; font-size: .68rem;
+      letter-spacing: .32em; text-transform: uppercase; color: var(--wine);
+    }
+    h2 {
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(2.1rem, 6vw, 3.2rem);
+      font-weight: 400; color: var(--wine); margin: .25rem 0 .5rem;
+    }
+    h3 {
+      font-family: Cinzel, serif; font-size: 1.05rem;
+      letter-spacing: .16em; text-transform: uppercase; color: var(--wine);
+      margin-bottom: .6rem;
+    }
+    p { font-size: 1.12rem; color: var(--ink); }
+    .muted { color: var(--muted); }
+    .ornament { color: var(--gold); margin: .6rem 0 1rem; letter-spacing: .4em; }
+
+    .blessing {
+      background:
+        radial-gradient(circle at 50% 0, rgba(196,161,90,.16), transparent 46%),
+        linear-gradient(180deg, #fffaf0, #f3e6cb);
+    }
+    .name-plate {
+      display: inline-block; margin-top: .4rem;
+      border: 1px solid rgba(196,161,90,.55);
+      background: #fffdf6;
+      padding: .45rem 1.15rem; border-radius: 999px;
+      font-family: Cinzel, serif; letter-spacing: .08em;
+      color: var(--wine); font-weight: 600;
+    }
+
+    .programme { background: #fff9ef; }
+    .day {
+      margin: 1.15rem auto 0;
+      max-width: 420px;
+      background: var(--paper);
+      border: 1px solid rgba(196,161,90,.45);
+      border-radius: 16px;
+      padding: 1.15rem 1rem 1.05rem;
+      text-align: left;
+      box-shadow: 0 10px 28px rgba(80,40,20,.06);
+    }
+    .day-head {
+      display: flex; align-items: baseline; justify-content: space-between;
+      border-bottom: 1px solid rgba(196,161,90,.35);
+      padding-bottom: .45rem; margin-bottom: .55rem;
+    }
+    .day-num {
+      font-family: Cinzel, serif; font-size: 1.35rem; color: var(--wine); font-weight: 700;
+    }
+    .day-when {
+      font-family: Cinzel, serif; font-size: .68rem;
+      letter-spacing: .22em; text-transform: uppercase; color: var(--gold);
+    }
+    .day ul { list-style: none; }
+    .day li {
+      padding: .28rem 0 .28rem 1.15rem;
+      position: relative; font-size: 1.05rem;
+    }
+    .day li::before {
+      content: "❀"; position: absolute; left: 0; color: var(--gold); font-size: .8rem; top: .38rem;
+    }
+
+    .venue {
+      background: linear-gradient(180deg, #f7ecd6, #efe0c4);
+    }
+    .venue-box {
+      margin: 1rem auto 0; max-width: 360px;
+      border: 1px solid var(--gold);
+      border-radius: 18px; padding: 1.1rem 1rem;
+      background: rgba(255,252,245,.75);
+    }
+    .venue-box strong {
+      display: block; font-family: Cinzel, serif;
+      font-size: 1.2rem; letter-spacing: .12em; color: var(--wine); margin: .2rem 0 .35rem;
+    }
+    .contact {
+      margin-top: .9rem;
+      font-family: Cinzel, serif; letter-spacing: .06em;
+    }
+    .contact a {
+      color: var(--wine); text-decoration: none; font-weight: 700;
+      border-bottom: 1px solid var(--gold);
+    }
+    .maps-btn {
+      display: inline-block;
+      margin-top: .85rem;
+      padding: .7rem 1.2rem;
+      border-radius: 999px;
+      background: var(--wine);
+      color: var(--gold-bright) !important;
+      text-decoration: none !important;
+      font-family: Cinzel, serif;
+      font-size: .78rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      border-bottom: 0 !important;
+    }
+
+    .quote { font-style: italic; font-size: 1.2rem; max-width: 28rem; margin: 0 auto; }
+    footer {
+      text-align: center; padding: 1.5rem 1rem 2.4rem;
+      font-family: Cinzel, serif; font-size: .68rem;
+      letter-spacing: .2em; text-transform: uppercase; color: var(--muted);
+    }
+
+    .float-call {
+      position: fixed; right: 1rem; bottom: 1rem; z-index: 20;
+      background: var(--wine); color: var(--gold-bright);
+      width: 54px; height: 54px; border-radius: 50%;
+      display: grid; place-items: center;
+      box-shadow: 0 10px 24px rgba(80,10,10,.35);
+      text-decoration: none; font-size: 1.25rem;
+    }
+    .float-music {
+      position: fixed; right: 1rem; bottom: 4.6rem; z-index: 20;
+      background: var(--gold);
+      color: var(--wine);
+      width: 54px; height: 54px; border-radius: 50%;
+      display: grid; place-items: center;
+      box-shadow: 0 10px 24px rgba(80,10,10,.28);
+      font-size: 1.15rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="gate" id="gate" aria-label="Open invitation">
+    <img class="gate-photo" src="https://sscb183.github.io/Shashti-Poorthi/title_card.png" alt="Shashti Poorti of Pidatala Nagamala">
+    <div class="gate-veil"></div>
+    <div class="gate-copy">
+      <p class="gate-kicker">With blessings of P Venkata Seshaiah &amp; Seetha Lakshmi</p>
+      <h1 class="gate-title">SHASHTI<br>POORTI</h1>
+      <p class="gate-of">of</p>
+      <p class="gate-name">Pidatala Nagamala</p>
+      <button class="seal" id="open" type="button" aria-label="Open invitation">
+        60
+        <span>OPEN</span>
+      </button>
+      <p class="gate-tap">Tap to open the invitation</p>
+    </div>
+  </section>
+
+  <main class="invite" id="invite">
+    <div class="hero-card">
+      <img src="https://sscb183.github.io/Shashti-Poorthi/title_card.png" alt="Title card: Shashti Poorti of Pidatala Nagamala">
+    </div>
+
+    <section class="blessing">
+      <div class="wrap">
+        <p class="eyebrow">With the blessings of</p>
+        <h3>P Venkata Seshaiah<br>&amp; Seetha Lakshmi</h3>
+        <p class="muted" style="margin-top:.35rem">and Guru Maharaj ji</p>
+        <p class="ornament">✦</p>
+        <p>We cordially invite you on the <strong>11th</strong> to be a part of the auspicious occasion of</p>
+        <h2>Shashti Poorti</h2>
+        <p class="muted">of</p>
+        <p class="name-plate">Pidatala Nagamala</p>
+        <p class="ornament">✦</p>
+        <p>Your gracious presence will make this occasion more special and blessed.</p>
+        <p class="quote" style="margin-top:1.1rem">Let us celebrate a lifetime of blessings, faith and good health together.</p>
+      </div>
+    </section>
+
+    <section class="programme">
+      <div class="wrap">
+        <p class="eyebrow">11th day invitation</p>
+        <h2>Programme</h2>
+        <p class="muted">You are invited for the homam on the 11th morning</p>
+
+        <article class="day">
+          <div class="day-head">
+            <span class="day-num">11th</span>
+            <span class="day-when">Morning</span>
+          </div>
+          <ul>
+            <li>Kalasha Pooja</li>
+            <li>Agniprathishtapana</li>
+            <li>Lakshmi Ganapati homam</li>
+            <li>Rudra homam</li>
+            <li>Lakshmi Narayana homam</li>
+            <li>Sudarshan homam</li>
+            <li>Navagraha homam</li>
+            <li>Ayushya homam</li>
+            <li>Mahamruthyunjaya homam</li>
+            <li>Purnahuthi</li>
+            <li>Kalasha Marjana</li>
+            <li>Mahadhashirvachanam</li>
+          </ul>
+        </article>
+        <p class="quote" style="margin-top:1.3rem">May the divine blessings continue forever.</p>
+      </div>
+    </section>
+
+    <section class="venue">
+      <div class="wrap">
+        <p class="eyebrow">Join us</p>
+        <h2>Venue</h2>
+        <div class="venue-box">
+          <p class="muted">Celebration at</p>
+          <strong>Home</strong>
+          <p>We look forward to your blessings and presence.</p>
+          <a class="maps-btn" href="https://maps.app.goo.gl/qs7ZXhF72p2KKDxMA?g_st=ac" target="_blank" rel="noopener">Open venue in Maps</a>
+          <p class="contact">Contact<br><a href="tel:9441210036">9441210036</a></p>
+        </div>
+        <p class="quote" style="margin-top:1.3rem">A new chapter of life, blessed by the past, bright with the present and filled with divine grace for the years ahead.</p>
+      </div>
+    </section>
+
+    <footer>Shashti Poorti · Pidatala Nagamala · With blessings of P Venkata Seshaiah &amp; Seetha Lakshmi and Guru Maharaj ji</footer>
+  </main>
+
+  <audio id="bgm" loop preload="auto" src="https://sscb183.github.io/Shashti-Poorthi/music.mp3"></audio>
+  <button class="float-music" id="music-btn" type="button" aria-label="Play or pause music">♪</button>
+  <a class="float-call" href="tel:9441210036" aria-label="Call 9441210036">☎</a>
+
+  <script>
+    var audio = document.getElementById("bgm");
+    var musicBtn = document.getElementById("music-btn");
+    function playMusic() {
+      audio.play().then(function () {
+        musicBtn.textContent = "❚❚";
+      }).catch(function () {
+        musicBtn.textContent = "♪";
+      });
+    }
+    musicBtn.addEventListener("click", function () {
+      if (audio.paused) playMusic();
+      else { audio.pause(); musicBtn.textContent = "♪"; }
+    });
+    document.getElementById("open").addEventListener("click", function () {
+      document.getElementById("gate").classList.add("is-open");
+      document.body.style.overflow = "auto";
+      playMusic();
+    });
+    document.body.style.overflow = "hidden";
+  </script>
+</body>
+</html>
